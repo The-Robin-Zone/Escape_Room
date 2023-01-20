@@ -2111,6 +2111,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 819847097327305450, guid: 3cc52c00d082b0b4a91897cd5bdf0c85,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8deb5a21c783e7e469134e16e01686d1, type: 2}
     - target: {fileID: 5974674523665034729, guid: 3cc52c00d082b0b4a91897cd5bdf0c85,
         type: 3}
       propertyPath: m_RootOrder
@@ -2118,18 +2123,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5974674523665034729, guid: 3cc52c00d082b0b4a91897cd5bdf0c85,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.6734767
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974674523665034729, guid: 3cc52c00d082b0b4a91897cd5bdf0c85,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.1236987
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974674523665034729, guid: 3cc52c00d082b0b4a91897cd5bdf0c85,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 5974674523665034729, guid: 3cc52c00d082b0b4a91897cd5bdf0c85,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5974674523665034729, guid: 3cc52c00d082b0b4a91897cd5bdf0c85,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 5974674523665034729, guid: 3cc52c00d082b0b4a91897cd5bdf0c85,
         type: 3}
@@ -3315,7 +3330,7 @@ PrefabInstance:
     - target: {fileID: 1717954561962503726, guid: ecdbf3dc6204e7a46943712ecfb94c12,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.01
+      value: 32.9
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: ecdbf3dc6204e7a46943712ecfb94c12,
         type: 3}
@@ -8441,6 +8456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 20m Epoxy Ground (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425383010550552526, guid: 7ff30c7e7a931fa4abaacbcf858e20a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1425383010550552527, guid: 7ff30c7e7a931fa4abaacbcf858e20a1,
         type: 3}
