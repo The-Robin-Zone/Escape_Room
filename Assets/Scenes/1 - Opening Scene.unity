@@ -140,6 +140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CornerLamp1
       objectReference: {fileID: 0}
+    - target: {fileID: 1271538652431596, guid: 8a3566550e9c0ba46b78e7bcdcb9d056, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4050002223867092, guid: 8a3566550e9c0ba46b78e7bcdcb9d056, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -990,7 +994,8 @@ GameObject:
   m_Component:
   - component: {fileID: 787042760}
   - component: {fileID: 787042761}
-  m_Layer: 0
+  - component: {fileID: 787042762}
+  m_Layer: 6
   m_Name: PostProcessing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,6 +1034,23 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!114 &787042762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787042759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 4e2cd1ec845009945adac502c5414344, type: 2}
 --- !u!1001 &811028980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1256,7 +1278,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 863177744}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 64
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
   antialiasingMode: 0
