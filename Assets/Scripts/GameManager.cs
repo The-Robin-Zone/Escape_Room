@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class GameManager : MonoBehaviour
 {
+    public TextMeshProUGUI CurrentPlayerName;
+    public TextMeshProUGUI CurrentPlayerTime;
     public TextMeshProUGUI FirstPlaceName;
     public TextMeshProUGUI FirstPlaceTime;
     public TextMeshProUGUI SecondPlaceName;
@@ -17,26 +20,22 @@ public class GameManager : MonoBehaviour
 
     public float CurrentRunScore;
     public int PlayerName;
-    public float timeLimitForRoom = 15.00f;
+    public float timeLimitForRoom = 900.00f;            // 900 second = 15 minutes
 
     // Timer
     public float Timer = 0.0f;
     public bool RoomStarted;
+    TimeSpan interval;
+    string timeInterval;
 
     void Start()
     {
-        PlayerName = PlayerPrefs.GetInt("PlayerName", 0);
-        PlayerName++;
-        PlayerPrefs.SetInt("PlayerName", PlayerName);
-        FirstPlaceName = GameObject.FindGameObjectWithTag("FirstPlace").GetComponent<TextMeshProUGUI>();
-        FirstPlaceTime = GameObject.FindGameObjectWithTag("FirstPlaceTime").GetComponent<TextMeshProUGUI>(); 
-        SecondPlaceName = GameObject.FindGameObjectWithTag("SecondPlace").GetComponent<TextMeshProUGUI>(); 
-        SecondPlaceTime = GameObject.FindGameObjectWithTag("SecondPlaceTime").GetComponent<TextMeshProUGUI>(); 
-        ThirdPlaceName = GameObject.FindGameObjectWithTag("ThirdPlaceTime").GetComponent<TextMeshProUGUI>(); 
-        ThirdPlaceTime = GameObject.FindGameObjectWithTag("ThirdPlaceTime").GetComponent<TextMeshProUGUI>();
+        LoadPlayerName();
+        SetWatch();
+        //LoadLeaderBoard();
 
-        LoadLeaderBoard();
-        // Add a Function to get the players name
+        // Just for testing watch
+        StartRoom();
     }
 
 
@@ -50,15 +49,60 @@ public class GameManager : MonoBehaviour
             }
             if (Timer < timeLimitForRoom)
             {
-                // Here I need to update the watch
-                Debug.Log(Timer);
+                interval = TimeSpan.FromSeconds(Timer);
+                timeInterval = interval.ToString("mm") + ":" + interval.ToString("ss");
+                CurrentPlayerTime.text = timeInterval;
             }
         }
+    }
 
+    void LoadPlayerName()
+    {
+        //For testing - reset player name
+        //PlayerPrefs.SetInt("PlayerName", 0);
+
+        PlayerName = PlayerPrefs.GetInt("PlayerName", 0);
+        PlayerName++;
+        PlayerPrefs.SetInt("PlayerName", PlayerName);
+    }
+
+    void SetWatch()
+    {
+        CurrentPlayerName = GameObject.FindGameObjectWithTag("CurrentPlayerName").GetComponent<TextMeshProUGUI>();
+        CurrentPlayerTime = GameObject.FindGameObjectWithTag("CurrentPlayerTimer").GetComponent<TextMeshProUGUI>();
+
+        if (PlayerName < 10)
+        {
+            CurrentPlayerName.text = "#00" + PlayerName.ToString();
+        }
+        else if (PlayerName < 100)
+        {
+            CurrentPlayerName.text = "#0" + PlayerName.ToString();
+        }
+        else if (PlayerName < 1000)
+        {
+            CurrentPlayerName.text = "#" + PlayerName.ToString();
+        }
+        else
+        {
+            //reset players name in PlayerPrefs
+            PlayerPrefs.SetInt("PlayerName", 1);
+            CurrentPlayerName.text = "#001";
+
+        }
+
+        CurrentPlayerTime.text = Timer.ToString();
     }
 
     void LoadLeaderBoard()
     {
+        FirstPlaceName = GameObject.FindGameObjectWithTag("FirstPlace").GetComponent<TextMeshProUGUI>();
+        FirstPlaceTime = GameObject.FindGameObjectWithTag("FirstPlaceTime").GetComponent<TextMeshProUGUI>();
+        SecondPlaceName = GameObject.FindGameObjectWithTag("SecondPlace").GetComponent<TextMeshProUGUI>();
+        SecondPlaceTime = GameObject.FindGameObjectWithTag("SecondPlaceTime").GetComponent<TextMeshProUGUI>();
+        ThirdPlaceName = GameObject.FindGameObjectWithTag("ThirdPlaceTime").GetComponent<TextMeshProUGUI>();
+        ThirdPlaceTime = GameObject.FindGameObjectWithTag("ThirdPlaceTime").GetComponent<TextMeshProUGUI>();
+
         FirstPlaceName.text = PlayerPrefs.GetString("FirstPlace", "Unranked");
         firstplacetime = PlayerPrefs.GetFloat("FirstPlaceTime", timeLimitForRoom);
         FirstPlaceTime.text = firstplacetime.ToString();
@@ -82,8 +126,8 @@ public class GameManager : MonoBehaviour
 
     void EndRoom()
     {
-        // Get timer value
-        
+        CurrentRunScore = Timer;
+
         if (CurrentRunScore < firstplacetime)
         {
             PlayerPrefs.SetString("FirstPlace", "#00" + PlayerName.ToString());
@@ -100,6 +144,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetFloat("HighScore", CurrentRunScore);
         }
 
+        // congratz message
         // play again?
     }
 
