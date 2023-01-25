@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Door
+  - FirstPlace
+  - SecondPlace
+  - ThirdPlace
+  - FirstPlace-time
+  - SecondPlace-time
+  - ThirdPlace-time
   layers:
   - Default
   - TransparentFX

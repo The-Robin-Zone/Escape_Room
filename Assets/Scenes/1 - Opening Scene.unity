@@ -24,6 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 2d4db2683fbe0ab4c85f6bc74748ea12, type: 2}
@@ -97,6 +98,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 112000000, guid: 1f75da02393fb8748b4df7d991204211,
+    type: 2}
   m_LightingDataAsset: {fileID: 112000000, guid: 1f75da02393fb8748b4df7d991204211,
     type: 2}
   m_LightingSettings: {fileID: 0}
@@ -9689,6 +9692,7 @@ GameObject:
   - component: {fileID: 787042761}
   - component: {fileID: 787042762}
   m_Layer: 0
+  m_Layer: 0
   m_Name: PostProcessing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10622,6 +10626,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 863177744}
   volumeLayer:
     serializedVersion: 2
+    m_Bits: 2147483647
     m_Bits: 2147483647
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
