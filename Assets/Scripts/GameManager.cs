@@ -16,10 +16,18 @@ public class GameManager : MonoBehaviour
     public float thirdplacetime;
 
     public float CurrentRunScore;
-    public string PlayerName;
+    public int PlayerName;
+    public float timeLimitForRoom = 15.00f;
+
+    // Timer
+    public float Timer = 0.0f;
+    public bool RoomStarted;
 
     void Start()
     {
+        PlayerName = PlayerPrefs.GetInt("PlayerName", 0);
+        PlayerName++;
+        PlayerPrefs.SetInt("PlayerName", PlayerName);
         FirstPlaceName = GameObject.FindGameObjectWithTag("FirstPlace").GetComponent<TextMeshProUGUI>();
         FirstPlaceTime = GameObject.FindGameObjectWithTag("FirstPlaceTime").GetComponent<TextMeshProUGUI>(); 
         SecondPlaceName = GameObject.FindGameObjectWithTag("SecondPlace").GetComponent<TextMeshProUGUI>(); 
@@ -34,22 +42,34 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        if (RoomStarted == true)
+        {
+            if (Timer < timeLimitForRoom)
+            {
+                Timer += Time.deltaTime;
+            }
+            if (Timer < timeLimitForRoom)
+            {
+                // Here I need to update the watch
+                Debug.Log(Timer);
+            }
+        }
+
     }
 
     void LoadLeaderBoard()
     {
-        FirstPlaceName.text = PlayerPrefs.GetString("FirstPlace", "Shaked");
-        firstplacetime = PlayerPrefs.GetFloat("FirstPlaceTime", 15.00f);
+        FirstPlaceName.text = PlayerPrefs.GetString("FirstPlace", "Unranked");
+        firstplacetime = PlayerPrefs.GetFloat("FirstPlaceTime", timeLimitForRoom);
         FirstPlaceTime.text = firstplacetime.ToString();
 
-        SecondPlaceName.text = PlayerPrefs.GetString("SecondPlace", "Shaked");
-        secondplacetime = PlayerPrefs.GetFloat("FirstPlaceTime", 15.00f);
+        SecondPlaceName.text = PlayerPrefs.GetString("SecondPlace", "Unranked");
+        secondplacetime = PlayerPrefs.GetFloat("FirstPlaceTime", timeLimitForRoom);
         SecondPlaceTime.text = secondplacetime.ToString();
 
 
-        ThirdPlaceName.text = PlayerPrefs.GetString("ThirdPlace", "Shaked");
-        thirdplacetime = PlayerPrefs.GetFloat("FirstPlaceTime", 15.00f);
+        ThirdPlaceName.text = PlayerPrefs.GetString("ThirdPlace", "Unranked");
+        thirdplacetime = PlayerPrefs.GetFloat("FirstPlaceTime", timeLimitForRoom);
         ThirdPlaceTime.text = thirdplacetime.ToString();
 
     }
@@ -57,6 +77,7 @@ public class GameManager : MonoBehaviour
     void StartRoom()
     {
         // Start Timer
+        RoomStarted = true;
     }
 
     void EndRoom()
@@ -65,17 +86,17 @@ public class GameManager : MonoBehaviour
         
         if (CurrentRunScore < firstplacetime)
         {
-            PlayerPrefs.SetString("FirstPlace", PlayerName);
+            PlayerPrefs.SetString("FirstPlace", "#00" + PlayerName.ToString());
             PlayerPrefs.SetFloat("HighScore", CurrentRunScore);
         }
         else if (CurrentRunScore < secondplacetime)
         {
-            PlayerPrefs.SetString("SecondPlace", PlayerName);
+            PlayerPrefs.SetString("SecondPlace", "#00" + PlayerName.ToString());
             PlayerPrefs.SetFloat("HighScore", CurrentRunScore);
         }
         else if (CurrentRunScore < thirdplacetime)
         {
-            PlayerPrefs.SetString("ThirdPlace", PlayerName);
+            PlayerPrefs.SetString("ThirdPlace", "#00" + PlayerName.ToString());
             PlayerPrefs.SetFloat("HighScore", CurrentRunScore);
         }
 
