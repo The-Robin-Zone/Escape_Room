@@ -11,6 +11,8 @@ TagManager:
   - FirstPlace-time
   - SecondPlace-time
   - ThirdPlace-time
+  - CurrentPlayerName
+  - CurrentPlayerTimer
   layers:
   - Default
   - TransparentFX
