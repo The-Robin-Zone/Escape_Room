@@ -2,60 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cd6963a-53c6-4452-97ee-da48e681666c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Bricks n Blocks.pdf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Bricks n Blocks.pdf.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Demo Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Demo Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Demo Scene/Demo_Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Demo Scene/Demo_Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Demo Scene/Demo_Scene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Demo Scene/Demo_Scene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Demo Scene/Demo_Scene/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Demo Scene/Demo_Scene/LightingData.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Demo Scene/Demo_Scene/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Demo Scene/Demo_Scene/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials/Block_Pavers.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials/Block_Pavers.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials/Brick_Cobble_withgrout.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials/Brick_Cobble_withgrout.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials/Brick_Shiny.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials/Brick_Shiny.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials/Brick_cobble_whitegrout_diffuseOriginal.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials/Brick_cobble_whitegrout_diffuseOriginal.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials/Ston_Stack_Grassy.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Materials/Ston_Stack_Grassy.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/SkyBox.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/SkyBox.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Textures.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Textures/Block_pavers_diffuseOriginal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Textures/Block_pavers_diffuseOriginal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Textures/Brick_cobble_whitegrout_diffuseOriginal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Textures/Brick_cobble_whitegrout_diffuseOriginal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Textures/Brick_shiny_diffuseOriginal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Textures/Brick_shiny_diffuseOriginal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Textures/Stone_stack_grassy_diffuseOriginal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/Texture Bricks 'n Blocks/Textures/Stone_stack_grassy_diffuseOriginal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1 - Opening Scene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1 - Opening Scene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2 - Room 1 - 1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2 - Room 1 - 1.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3 - Room 2 -1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3 - Room 2 -1.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/LightingData.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/Lightmap-1_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/Lightmap-1_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/Lightmap-1_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/Lightmap-1_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-1.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-1.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-2.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-2.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-3.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-3.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-4.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-4.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-5.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-5.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-6.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeprecatedWorldInteractionDemo/ReflectionProbe-6.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RoofTop.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RoofTop.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/LightingData.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/Lightmap-1_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/Lightmap-1_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/Lightmap-1_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/Lightmap-1_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-1.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-1.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-2.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-2.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-3.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-3.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-4.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-4.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-5.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-5.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-6.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemo/ReflectionProbe-6.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemoSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WorldInteractionDemoSettings.lighting.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape_Room/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape_Room/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Previous Projects/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Previous Projects/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3 - Room 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3 - Room 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeyPad.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.3/InputSystem/Actions/InputActionReference.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.3/InputSystem/Controls/InputControlLayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.3/InputSystem/Controls/InputControlList.cs" root0="SKIP_HIGHLIGHTING" />
@@ -70,6 +22,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.0.4/Runtime/Inputs/Simulation/XRSimulatedController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.0.4/Runtime/Inputs/Simulation/XRSimulatedHMD.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.0.4/Runtime/Locomotion/Teleportation/TeleportationArea.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.0.4/Runtime/UI/TrackedDeviceGraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.0.4/Runtime/XR/InputHelpers.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -80,16 +33,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "rider.run.widget.enabled.cache": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Unity.exe" />
@@ -129,6 +82,8 @@
       <option name="presentableId" value="Default" />
       <updated>1674570588686</updated>
       <workItem from="1674570605408" duration="2723000" />
+      <workItem from="1674669378398" duration="2000" />
+      <workItem from="1674670573573" duration="736000" />
     </task>
     <servers />
   </component>
