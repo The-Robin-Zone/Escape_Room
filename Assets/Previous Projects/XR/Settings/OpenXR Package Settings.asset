@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   features:
   - {fileID: -5936948888746250964}
-  - {fileID: 9211216949580576387}
-  - {fileID: 10144733092229242}
-  - {fileID: 4279078914309938017}
-  - {fileID: -283354731937412964}
-  - {fileID: 4000231209458262323}
-  - {fileID: 73929415527294534}
-  - {fileID: 567841372170657303}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_renderMode: 1
   m_depthSubmissionMode: 0
 --- !u!114 &-8602007678782163915
@@ -278,7 +278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0ebc320a151d3408ea1e9fce54d40e, type: 3}
   m_Name: OpenXR Package Settings
   m_EditorClassIdentifier: 
-  Keys: 010000000d00000007000000
   Keys: 010000000d00000007000000
   Values:
   - {fileID: 2052451625044293938}
