@@ -40,7 +40,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         CityBackground.Play();
-
         LoadPlayerName();
         SetWatch();
         //LoadLeaderBoard();
