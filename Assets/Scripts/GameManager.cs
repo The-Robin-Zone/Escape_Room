@@ -6,6 +6,7 @@ using System;
 
 public class GameManager : MonoBehaviour
 {
+    // Leader Board
     public TextMeshProUGUI CurrentPlayerName;
     public TextMeshProUGUI CurrentPlayerTime;
     public TextMeshProUGUI FirstPlaceName;
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     public float secondplacetime;
     public float thirdplacetime;
 
+    // Current Run stats
     public float CurrentRunScore;
     public int PlayerName;
     public float timeLimitForRoom = 900.00f;            // 900 second = 15 minutes
@@ -28,8 +30,17 @@ public class GameManager : MonoBehaviour
     TimeSpan interval;
     string timeInterval;
 
+    // Sounds
+    public AudioSource CityBackground;
+    public AudioSource Sirens;
+    public AudioSource Bang;
+    public AudioSource RocketWhistle;
+    public AudioSource RoomBackground;
+
     void Start()
     {
+        CityBackground.Play();
+
         LoadPlayerName();
         SetWatch();
         //LoadLeaderBoard();
@@ -41,6 +52,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        // Block of code for watch update
         if (RoomStarted == true)
         {
             if (Timer < timeLimitForRoom)
@@ -58,7 +70,7 @@ public class GameManager : MonoBehaviour
 
     void LoadPlayerName()
     {
-        //For testing - reset player name
+        //For testing -  uncomment to reset player name
         //PlayerPrefs.SetInt("PlayerName", 0);
 
         PlayerName = PlayerPrefs.GetInt("PlayerName", 0);
@@ -100,7 +112,7 @@ public class GameManager : MonoBehaviour
         FirstPlaceTime = GameObject.FindGameObjectWithTag("FirstPlaceTime").GetComponent<TextMeshProUGUI>();
         SecondPlaceName = GameObject.FindGameObjectWithTag("SecondPlace").GetComponent<TextMeshProUGUI>();
         SecondPlaceTime = GameObject.FindGameObjectWithTag("SecondPlaceTime").GetComponent<TextMeshProUGUI>();
-        ThirdPlaceName = GameObject.FindGameObjectWithTag("ThirdPlaceTime").GetComponent<TextMeshProUGUI>();
+        ThirdPlaceName = GameObject.FindGameObjectWithTag("ThirdPlace").GetComponent<TextMeshProUGUI>();
         ThirdPlaceTime = GameObject.FindGameObjectWithTag("ThirdPlaceTime").GetComponent<TextMeshProUGUI>();
 
         FirstPlaceName.text = PlayerPrefs.GetString("FirstPlace", "Unranked");
