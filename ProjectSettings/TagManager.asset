@@ -13,6 +13,12 @@ TagManager:
   - ThirdPlace-time
   - CurrentPlayerName
   - CurrentPlayerTimer
+  - Room2_FirstPlace
+  - Room2_FirsrtPlace-time
+  - Room2_SecondPlace
+  - Room2_SecondPlace-time
+  - Room2_ThirdPlace
+  - Room2_ThirdPlace-time
   layers:
   - Default
   - TransparentFX
