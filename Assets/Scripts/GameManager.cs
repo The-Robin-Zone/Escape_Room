@@ -42,7 +42,6 @@ public class GameManager : MonoBehaviour
     public float Timer = 0.0f;
     public bool RoomStarted;
     TimeSpan interval;
-    string timeInterval;
 
     // Sounds
     public AudioSource CityBackground;
@@ -57,10 +56,11 @@ public class GameManager : MonoBehaviour
     {
         CityBackground.Play();
         CityBackground.volume = 0.4f;
+
         LoadPlayerName();
         SetWatch();
         LoadLeaderBoard_Room1();
-        //LoadLeaderBoard_Room2();
+        LoadLeaderBoard_Room2();
 
         // Just for testing watch
         StartRoom();
@@ -77,16 +77,14 @@ public class GameManager : MonoBehaviour
             }
             if (Timer < timeLimitForRoom)
             {
-                interval = TimeSpan.FromSeconds(Timer);
-                timeInterval = interval.ToString("mm") + ":" + interval.ToString("ss");
-                CurrentPlayerTime.text = timeInterval;
+                CurrentPlayerTime.text = FloattoMin(Timer);
             }
         }
     }
 
     void LoadPlayerName()
     {
-        //For testing -  uncomment to reset player name
+        //For testing -  uncomment to reset player name (number)
         //PlayerPrefs.SetInt("PlayerName", 0);
 
         PlayerName = PlayerPrefs.GetInt("PlayerName", 0);
@@ -125,50 +123,49 @@ public class GameManager : MonoBehaviour
     void LoadLeaderBoard_Room1()
     {
         FirstPlaceName = GameObject.FindGameObjectWithTag("FirstPlace").GetComponent<TextMeshProUGUI>();
-        FirstPlaceTime = GameObject.FindGameObjectWithTag("FirstPlaceTime").GetComponent<TextMeshProUGUI>();
+        FirstPlaceTime = GameObject.FindGameObjectWithTag("FirstPlace-time").GetComponent<TextMeshProUGUI>();
         SecondPlaceName = GameObject.FindGameObjectWithTag("SecondPlace").GetComponent<TextMeshProUGUI>();
-        SecondPlaceTime = GameObject.FindGameObjectWithTag("SecondPlaceTime").GetComponent<TextMeshProUGUI>();
+        SecondPlaceTime = GameObject.FindGameObjectWithTag("SecondPlace-time").GetComponent<TextMeshProUGUI>();
         ThirdPlaceName = GameObject.FindGameObjectWithTag("ThirdPlace").GetComponent<TextMeshProUGUI>();
-        ThirdPlaceTime = GameObject.FindGameObjectWithTag("ThirdPlaceTime").GetComponent<TextMeshProUGUI>();
-
-        FirstPlaceName.text = "Roni"; //PlayerPrefs.GetString("FirstPlace", "Unranked");
+        ThirdPlaceTime = GameObject.FindGameObjectWithTag("ThirdPlace-time").GetComponent<TextMeshProUGUI>();
+    
+        FirstPlaceName.text = PlayerPrefs.GetString("FirstPlace", "Unranked");
         firstplacetime = PlayerPrefs.GetFloat("FirstPlaceTime", timeLimitForRoom);
-        FirstPlaceTime.text = "15:00"; // firstplacetime.ToString();
+        FirstPlaceTime.text = FloattoMin(firstplacetime);
 
         SecondPlaceName.text = PlayerPrefs.GetString("SecondPlace", "Unranked");
         secondplacetime = PlayerPrefs.GetFloat("SecondPlaceTime", timeLimitForRoom);
-        SecondPlaceTime.text = secondplacetime.ToString();
-
+        SecondPlaceTime.text = FloattoMin(secondplacetime);
 
         ThirdPlaceName.text = PlayerPrefs.GetString("ThirdPlace", "Unranked");
         thirdplacetime = PlayerPrefs.GetFloat("ThirdPlaceTime", timeLimitForRoom);
-        ThirdPlaceTime.text = thirdplacetime.ToString();
+        ThirdPlaceTime.text = FloattoMin(thirdplacetime);
 
     }
 
-    //void LoadLeaderBoard_Room2()
-    //{
-    //    Room2_FirstPlaceName = GameObject.FindGameObjectWithTag("Room2_FirstPlace").GetComponent<TextMeshProUGUI>();
-    //    Room2_FirstPlaceTime = GameObject.FindGameObjectWithTag("Room2_FirstPlaceTime").GetComponent<TextMeshProUGUI>();
-    //    Room2_SecondPlaceName = GameObject.FindGameObjectWithTag("Room2_SecondPlace").GetComponent<TextMeshProUGUI>();
-    //    Room2_SecondPlaceTime = GameObject.FindGameObjectWithTag("Room2_SecondPlaceTime").GetComponent<TextMeshProUGUI>();
-    //    Room2_ThirdPlaceName = GameObject.FindGameObjectWithTag("Room2_ThirdPlace").GetComponent<TextMeshProUGUI>();
-    //    Room2_ThirdPlaceTime = GameObject.FindGameObjectWithTag("Room2_ThirdPlaceTime").GetComponent<TextMeshProUGUI>();
+    void LoadLeaderBoard_Room2()
+    {
 
-    //    Room2_FirstPlaceName.text = PlayerPrefs.GetString("Room2_FirstPlace", "Unranked");
-    //    Room2_firstplacetime = PlayerPrefs.GetFloat("Room2_FirstPlaceTime", timeLimitForRoom);
-    //    Room2_FirstPlaceTime.text = firstplacetime.ToString();
+        Room2_FirstPlaceName = GameObject.FindGameObjectWithTag("Room2_FirstPlace").GetComponent<TextMeshProUGUI>();
+        Room2_FirstPlaceTime = GameObject.FindGameObjectWithTag("Room2_FirsrtPlace-time").GetComponent<TextMeshProUGUI>();
+        Room2_SecondPlaceName = GameObject.FindGameObjectWithTag("Room2_SecondPlace").GetComponent<TextMeshProUGUI>();
+        Room2_SecondPlaceTime = GameObject.FindGameObjectWithTag("Room2_SecondPlace-time").GetComponent<TextMeshProUGUI>();
+        Room2_ThirdPlaceName = GameObject.FindGameObjectWithTag("Room2_ThirdPlace").GetComponent<TextMeshProUGUI>();
+        Room2_ThirdPlaceTime = GameObject.FindGameObjectWithTag("Room2_ThirdPlace-time").GetComponent<TextMeshProUGUI>();
 
-    //    Room2_SecondPlaceName.text = PlayerPrefs.GetString("Room2_SecondPlace", "Unranked");
-    //    Room2_secondplacetime = PlayerPrefs.GetFloat("Room2_SecondPlaceTime", timeLimitForRoom);
-    //    Room2_SecondPlaceTime.text = secondplacetime.ToString();
+        Room2_FirstPlaceName.text = PlayerPrefs.GetString("Room2_FirstPlace", "Unranked");
+        Room2_firstplacetime = PlayerPrefs.GetFloat("Room2_FirstPlaceTime", timeLimitForRoom);
+        Room2_FirstPlaceTime.text = FloattoMin(Room2_firstplacetime);
 
+        Room2_SecondPlaceName.text = PlayerPrefs.GetString("Room2_SecondPlace", "Unranked");
+        Room2_secondplacetime = PlayerPrefs.GetFloat("Room2_SecondPlaceTime", timeLimitForRoom);
+        Room2_SecondPlaceTime.text = FloattoMin(Room2_secondplacetime);
 
-    //    Room2_ThirdPlaceName.text = PlayerPrefs.GetString("Room2_ThirdPlace", "Unranked");
-    //    Room2_thirdplacetime = PlayerPrefs.GetFloat("Room2_ThirdPlaceTime", timeLimitForRoom);
-    //    Room2_ThirdPlaceTime.text = thirdplacetime.ToString();
+        Room2_ThirdPlaceName.text = PlayerPrefs.GetString("Room2_ThirdPlace", "Unranked");
+        Room2_thirdplacetime = PlayerPrefs.GetFloat("Room2_ThirdPlaceTime", timeLimitForRoom);
+        Room2_ThirdPlaceTime.text = FloattoMin(Room2_thirdplacetime);
 
-    //}
+    }
 
     public void StartButton()
     {
@@ -176,6 +173,8 @@ public class GameManager : MonoBehaviour
         RocketWhistle.volume = 1;
         Sirens.Play();
         Sirens.volume = 1;
+        Bang.PlayDelayed(5);
+        Bang.volume = 1;
 
         Nuke.SetActive(true);
     }
@@ -206,25 +205,53 @@ public class GameManager : MonoBehaviour
     void EndRoom()
     {
         CurrentRunScore = Timer;
-        // Add which room player did so we know which leaderboard to update
-        if (CurrentRunScore < firstplacetime)
+
+        if (RoomChoosen == 1)
         {
-            PlayerPrefs.SetString("FirstPlace", "#00" + PlayerName.ToString());
-            PlayerPrefs.SetFloat("HighScore", CurrentRunScore);
+            if (CurrentRunScore < firstplacetime)
+            {
+                PlayerPrefs.SetString("FirstPlace", CurrentPlayerName.text);
+                PlayerPrefs.SetFloat("FirstPlaceTime", CurrentRunScore);
+            }
+            else if (CurrentRunScore < secondplacetime)
+            {
+                PlayerPrefs.SetString("SecondPlace", CurrentPlayerName.text);
+                PlayerPrefs.SetFloat("SecondPlaceTime", CurrentRunScore);
+            }
+            else if (CurrentRunScore < thirdplacetime)
+            {
+                PlayerPrefs.SetString("ThirdPlace", CurrentPlayerName.text);
+                PlayerPrefs.SetFloat("ThirdPlaceTime", CurrentRunScore);
+            }
         }
-        else if (CurrentRunScore < secondplacetime)
+        else if (RoomChoosen == 2)
         {
-            PlayerPrefs.SetString("SecondPlace", "#00" + PlayerName.ToString());
-            PlayerPrefs.SetFloat("HighScore", CurrentRunScore);
+            if (CurrentRunScore < firstplacetime)
+            {
+                PlayerPrefs.SetString("Room2_FirstPlace", CurrentPlayerName.text);
+                PlayerPrefs.SetFloat("Room2_FirstPlaceTime", CurrentRunScore);
+            }
+            else if (CurrentRunScore < secondplacetime)
+            {
+                PlayerPrefs.SetString("Room2_SecondPlace", CurrentPlayerName.text);
+                PlayerPrefs.SetFloat("Room2_SecondPlaceTime", CurrentRunScore);
+            }
+            else if (CurrentRunScore < thirdplacetime)
+            {
+                PlayerPrefs.SetString("Room2_ThirdPlace", CurrentPlayerName.text);
+                PlayerPrefs.SetFloat("Room2_ThirdPlaceTime", CurrentRunScore);
+            }
         }
-        else if (CurrentRunScore < thirdplacetime)
-        {
-            PlayerPrefs.SetString("ThirdPlace", "#00" + PlayerName.ToString());
-            PlayerPrefs.SetFloat("HighScore", CurrentRunScore);
-        }
+        
 
         // congratz message
         // play again?
+    }
+
+    public string FloattoMin(float time)
+    {
+        interval = TimeSpan.FromSeconds(time);
+        return interval.ToString("mm") + ":" + interval.ToString("ss");
     }
 
 }

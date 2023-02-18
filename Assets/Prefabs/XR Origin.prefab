@@ -312,11 +312,26 @@ MonoBehaviour:
   firstplacetime: 0
   secondplacetime: 0
   thirdplacetime: 0
+  Room2_FirstPlaceName: {fileID: 0}
+  Room2_FirstPlaceTime: {fileID: 0}
+  Room2_SecondPlaceName: {fileID: 0}
+  Room2_SecondPlaceTime: {fileID: 0}
+  Room2_ThirdPlaceName: {fileID: 0}
+  Room2_ThirdPlaceTime: {fileID: 0}
+  Room2_firstplacetime: 0
+  Room2_secondplacetime: 0
+  Room2_thirdplacetime: 0
   CurrentRunScore: 0
   PlayerName: 0
   timeLimitForRoom: 900
   Timer: 0
   RoomStarted: 0
+  CityBackground: {fileID: 0}
+  Sirens: {fileID: 0}
+  Bang: {fileID: 0}
+  RocketWhistle: {fileID: 0}
+  RoomBackground: {fileID: 0}
+  Nuke: {fileID: 0}
 --- !u!1 &8903523659823779262
 GameObject:
   m_ObjectHideFlags: 0
