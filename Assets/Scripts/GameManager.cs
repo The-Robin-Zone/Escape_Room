@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
     public AudioSource RoomBackground;
 
     public GameObject Nuke;
+    public GameObject UICanvas;
 
     void Start()
     {
@@ -177,6 +178,7 @@ public class GameManager : MonoBehaviour
         Bang.volume = 1;
 
         Nuke.SetActive(true);
+        UICanvas.SetActive(false);
     }
 
     public void ExitButton()
