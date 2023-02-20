@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cd6963a-53c6-4452-97ee-da48e681666c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape_Room/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape_Room/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/OpenXR Plugin/1.6.0/Controller/Prefabs/Controller.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/OpenXR Plugin/1.6.0/Controller/Prefabs/Controller.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/1 - Opening Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1 - Opening Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
@@ -14,6 +14,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeyPad.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.10/Editor/Volume/VolumeEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.2.0/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -77,6 +78,9 @@
       <workItem from="1674670573573" duration="736000" />
       <workItem from="1676906969002" duration="3000" />
       <workItem from="1676912087606" duration="1840000" />
+      <workItem from="1676925929824" duration="548000" />
+      <workItem from="1676926533673" duration="4000" />
+      <workItem from="1676929867171" duration="76000" />
     </task>
     <servers />
   </component>
